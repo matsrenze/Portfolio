@@ -9,6 +9,17 @@ body {
     padding: 0;
 }
 
+
+/* States */
+
+a:hover {
+    border-style: dashed;
+    border-width: 1px;
+    border-radius: 2px;
+    padding: 2px;
+    transition: 0.1s;
+}
+
 header nav {
     margin-left: 7%;
     margin-right: 7%;
@@ -39,10 +50,6 @@ header nav ul li a {
     color: white;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
 header nav ul li button {
     background: none;
     border-style: none;
@@ -52,10 +59,6 @@ header nav ul li button {
     font-weight: 600;
     color: white;
     font-size: 1em;
-}
-
-header nav ul li button:hover {
-    text-decoration: underline;
 }
 
 main {
@@ -224,6 +227,7 @@ main .myworkselection section a {
 footer {
     height: 20em;
     background-color: #000000;
+    width: 100%;
 }
 
 footer div {
@@ -285,12 +289,13 @@ footer section:nth-of-type(2) {
 }
 
 .graphic div .introGRA p {
-    width: 60%;
+    width: 65%;
+    margin-right: -10em;
 }
 
 .graphic main div .evensneldoen {
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     right: 8%;
     top: 22%;
     height: 35em;
@@ -308,15 +313,21 @@ footer section:nth-of-type(2) {
     align-self: center;
 }
 
+.graphic .Vormgeving1 {
+    position: relative;
+    text-align: right;
+}
+
 .graphic .Vormgeving1 h2 {
     font-size: 85px;
 }
 
 .graphic .vormgeving2 {
     height: 30em;
-    margin-right: -15%;
+    padding-left: 5%;
     margin-top: 10%;
     margin-bottom: 10%;
+    margin-right: 2%;
 }
 
 .graphic .vrgm2 h2 {
@@ -325,8 +336,12 @@ footer section:nth-of-type(2) {
 
 .graphic .vrgm2 {
     width: 60%;
-    margin-left: -30%;
+    margin-left: -12%;
     padding-right: 10%;
+}
+
+.graphic .vrgm2 p {
+    width: 40em;
 }
 
 .graphic div:nth-of-type(4) {
@@ -370,4 +385,69 @@ footer section:nth-of-type(2) {
     font-weight: 600;
     color: white;
     line-height: 35px;
+}
+
+.graphic main div .ISGAimg {
+    position: absolute;
+    z-index: -1;
+    right: 8%;
+    top: 22%;
+    height: 35em;
+}
+
+.dragonimg {
+    height: 35em;
+    padding-right: 4em;
+    padding-left: 1em;
+    padding-top: 10%;
+}
+
+.fedimg {
+    height: 30em;
+    margin-right: -15%;
+    margin-top: 10%;
+    margin-bottom: 40%;
+}
+
+.fedlayout {
+    margin-right: 20%;
+    margin-left: -8%;
+}
+
+.fedlayout section {
+    padding-right: 10%;
+}
+
+.ddt {
+    height: 30em;
+    margin-top: 10%;
+    align-self: center;
+}
+
+.ddttekst {
+    padding-left: 4em;
+}
+
+.projectimg {
+    position: absolute;
+    z-index: 0;
+    right: 10em;
+    top: 22%;
+    height: 35em;
+}
+
+.beyondsec {
+    margin-left: -11em;
+    margin-bottom: 20%;
+    margin-right: 4em;
+    width: 70%;
+}
+
+.beyondsec h2 {
+    margin-right: -2em;
+}
+
+.beyondimg {
+    height: 30em;
+    margin-top: 22%;
 }
